@@ -1,0 +1,86 @@
+/* general */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: 'Fredoka', sans-serif;
+  
+}
+clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+/* container */
+.container{
+  margin: auto;
+  width: 70%;
+  max-width: 1200px;
+}
+/* header */
+header{
+  color:#E53170;
+  text-align: center;
+  padding: 30px 0px 5px 0px;
+}
+/* main */
+main .texto{
+  text-align: center;
+  padding: 30px 0px;
+}
+/* cards */
+.cards{
+  align-items: center;
+}
+.card{
+  width: calc((100% - 60px) / 3 );
+  background-color: #0F0E17;
+  height: 75px;
+  float: left;
+  margin: 15px 10px;
+  min-width: 250px;
+}
+.info{
+  padding-top: 7px;
+}
+.foto{
+  height: 75px;
+  width: 75px;
+  background-size: cover;
+  float: left;
+  margin-right: 10px;
+}
+/* info */
+.nombre{
+  color: white;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.trabajo{
+  color: white;
+  font-size: .7rem;
+}
+.correo{
+  font-size: .7rem;
+  color: #55CCCE;
+}
+/* fotos */
+.foto.marco{
+  background-image: url(../img/male1.png);
+}
+.foto.laura{
+  background-image: url(../img/female1.png);
+}
+.foto.giorgio{
+  background-image: url(../img/male2.png);
+}
+.foto.marta{
+  background-image: url(../img/female2.png);
+}
+.foto.roberto{
+  background-image: url(../img/male3.png);
+}
+.foto.daniela{
+  background-image: url(../img/female3.png);
+}

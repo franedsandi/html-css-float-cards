@@ -2,19 +2,25 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-family: 'Fredoka', sans-serif;
 }
-clearfix::after {
+.clearfix::after {
   content: '';
   display: table;
   clear: both;
+}
+.debug{
+background-color: rgb(224, 2, 2);
+border:1px solid black;
+min-height: 100px;
 }
 /* container */
 .container {
   margin: auto;
   width: 90%;
   max-width: 1200px;
+  font-size: 18px;
 }
 
 /* header */
@@ -22,67 +28,55 @@ header {
   color:#E53170;
   text-align: center;
   font-weight: bold;
-  padding: 30px 0px 5px 0px;
+  padding: 30px auto;
 }
 /* main */
 main .texto {
   text-align: center;
-  padding: 30px 0px;
+  padding-top: 30px;
+  font-size: 1rem; 
 }
-/* cards */
-.cards {
-  align-items: center;
+.row{
+  margin-top: 20px;
 }
-.card {
-  width: calc((100% - 60px) / 3 );
-  background-color: #0F0E17;
-  height: 75px;
+
+.col{
+  padding: 15px 10px;
+  min-width: 350px;
+}
+.row .col{
   float: left;
-  margin: 15px 10px;
-  min-width: 220px;
-  
+  width: calc(100% /3);
+}
+.card{
+  background-color: rgb(15,14,23);
+  color: white;
+  box-shadow: 0px 0px 15px rgb(71, 66, 66);
 }
 .info {
-  padding-top: 7px;
+  padding: 10px 15px;
+  display: inline-block;
+
 }
-.foto {
-  height: 75px;
-  width: 75px;
-  background-size: cover;
+.card p, .role{
+  margin-bottom: 7px;
+}
+.card img, 
+.card.info{
   float: left;
-  margin-right: 10px;
 }
-/* info */
-.nombre {
-  color: white;
+.card img{
+  width: 100px;
+}
+.info p{
+  font-size: 1.1rem;
+}
+.info .role{
+  display: inline-block;
   font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
-.trabajo {
-  color: white;
-  font-size: .7rem;
-}
-.correo {
-  font-size: .7rem;
-  color: #55CCCE;
-}
-/* fotos */
-.foto.marco {
-  background-image: url(../img/male1.png);
-}
-.foto.laura {
-  background-image: url(../img/female1.png);
-}
-.foto.giorgio {
-  background-image: url(../img/male2.png);
-}
-.foto.marta {
-  background-image: url(../img/female2.png);
-}
-.foto.roberto {
-  background-image: url(../img/male3.png);
-}
-.foto.daniela {
-  background-image: url(../img/female3.png);
+.info .correo{
+  display: block;
+  font-size: 1rem;
+  color: #75BCB6;
 }

@@ -15,3 +15,83 @@
   border:1px solid black;
   min-height: 100px;
 }
+/* container */
+body{
+  background-color: #FFFFFE;
+}
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  font-size: 18px;
+}
+
+/* header */
+header {
+  color:#E53170;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto 30px;
+}
+
+/* main */
+  /* main generali */
+main .texto {
+  text-align: center;
+  font-size: 1.5rem; 
+  margin-bottom: 20px;
+  color: #0F0E17;
+}
+.row .col,
+.card img, 
+.card.info {
+  float: left;
+}
+.info,
+.info .role{
+  display: inline-block;
+}
+.card p, 
+.card .role {
+  margin-bottom: 7px;
+}
+.info .role,
+.info .correo {
+  font-size: .9rem;
+}
+
+  /* main specifici */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row .col {
+  width: calc(100% /3);
+}
+.col {
+  padding: 15px 10px;
+  min-width: 330px;
+}
+.card {
+  background-color: rgb(15,14,23);
+  color: white;
+  box-shadow: 0px 0px 15px rgb(71, 66, 66);
+}
+.info {
+  padding: 10px 15px;
+}
+.card img {
+  width: 100px;
+}
+.info p {
+  font-size: 1.1rem;
+}
+.info .correo {
+  display: block;
+  color: #75BCB6;
+}
+footer p {
+  text-align: center;
+  color: blueviolet ;
+}

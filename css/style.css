@@ -10,10 +10,10 @@
   display: table;
   clear: both;
 }
-.debug{
-background-color: rgb(224, 2, 2);
-border:1px solid black;
-min-height: 100px;
+.debug {
+  background-color: rgb(224, 2, 2);
+  border:1px solid black;
+  min-height: 100px;
 }
 /* container */
 .container {
@@ -28,55 +28,57 @@ header {
   color:#E53170;
   text-align: center;
   font-weight: bold;
-  padding: 30px auto;
-}
-/* main */
-main .texto {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 1rem; 
-}
-.row{
-  margin-top: 20px;
+  margin: 0px auto 30px;
 }
 
-.col{
-  padding: 15px 10px;
-  min-width: 350px;
+/* main */
+  /* main generali */
+main .texto {
+  text-align: center;
+  font-size: 1rem; 
+  margin-bottom: 20px;
 }
-.row .col{
+.row .col,
+.card img, 
+.card.info {
   float: left;
+}
+.info,
+.info .role{
+  display: inline-block;
+}
+.card p, 
+.card .role {
+  margin-bottom: 7px;
+}
+.info .role,
+.info .correo {
+  font-size: .9rem;
+}
+
+  /* main specifici */
+.row .col {
   width: calc(100% /3);
 }
-.card{
+.col {
+  padding: 15px 10px;
+  min-width: 330px;
+}
+.card {
   background-color: rgb(15,14,23);
   color: white;
   box-shadow: 0px 0px 15px rgb(71, 66, 66);
 }
 .info {
   padding: 10px 15px;
-  display: inline-block;
-
 }
-.card p, .role{
-  margin-bottom: 7px;
-}
-.card img, 
-.card.info{
-  float: left;
-}
-.card img{
+.card img {
   width: 100px;
 }
-.info p{
+.info p {
   font-size: 1.1rem;
 }
-.info .role{
-  display: inline-block;
-  font-size: 1rem;
-}
-.info .correo{
+.info .correo {
   display: block;
-  font-size: 1rem;
   color: #75BCB6;
 }
